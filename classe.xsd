@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:complexType name="tipoStudente">
+	<xs:sequence>
+		<xs:element name="matricola" type="xs:string"/>
+		<xs:element name="cognome" type="xs:string"/>
+		<xs:element name="nome" type="xs:string"/>
+	</xs:sequence>
+</xs:complexType>
+
+
+<xs:element name="classe">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="anno">
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="sezione" type="xs:string"/>
+			<xs:element name="corso" type="xs:string"/>
+			<xs:element name="studente" type="tipoStudente" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+
+</xs:schema>

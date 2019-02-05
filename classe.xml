@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<classe>
+	<anno>1</anno>
+	<sezione>A</sezione>
+	<corso>INT</corso>
+	<studente>
+		<matricola>12345</matricola>
+		<cognome>Botticchio</cognome>
+		<nome>Armando</nome>
+	</studente>
+	<studente>
+		<matricola>12333</matricola>
+		<cognome>Lepre</cognome>
+		<nome>Antonio</nome>
+	</studente>
+	<studente>
+		<matricola>17833</matricola>
+		<cognome>Conte</cognome>
+		<nome>Paolo</nome>
+	</studente>
+</classe>
